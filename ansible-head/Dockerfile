@@ -18,7 +18,7 @@ WORKDIR /ansible
 RUN pip3 install ansible
 
 RUN mkdir /etc/ansible
-COPY ansible.cfg /etc/ansible
+COPY ansible.cfg /etc/ansible/
 
 CMD ["/usr/sbin/sshd", "-Dd"]
 
