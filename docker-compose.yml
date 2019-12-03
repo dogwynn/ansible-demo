@@ -1,12 +1,17 @@
 version: '2'
 
 services:
+  ansible-head:
+    build: ./ansible-head
+    volumes:
+      - '.:/ansible'
+    
   web-server:
-    build: .
+    build: ./server
     command: >
       /usr/sbin/sshd -D
 
   api-server:
-    build: .
+    build: ./server
     command: >
       /usr/sbin/sshd -D
