@@ -16,3 +16,4 @@ $ ./get-ip.sh
 
 Use those IPs to create an Ansible inventory file.
 
+The root user of these containers has the password `demopassword`.
