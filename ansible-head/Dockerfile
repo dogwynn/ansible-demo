@@ -1,7 +1,7 @@
 FROM python:3.7
 MAINTAINER "David O'Gwynn <dogwynn@lowlandresearch.com>"
 
-RUN apt-get update && apt-get install -y openssh-server build-essential less vim net-tools sshpass
+RUN apt-get update && apt-get install -y openssh-server build-essential less vim net-tools sshpass host
 
 RUN mkdir /var/run/sshd
 RUN echo 'root:demopassword' | chpasswd
