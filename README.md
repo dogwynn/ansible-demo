@@ -38,5 +38,5 @@ api-server
 You can perform the `ping` command against the servers as such:
 
 ```
-ansible -i hosts.conf -m ping all
+ansible -i hosts.conf -k -m ping all
 ```
